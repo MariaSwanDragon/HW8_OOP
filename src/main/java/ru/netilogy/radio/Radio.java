@@ -60,18 +60,12 @@ public class Radio {
         if (currentVolume < 10) {
             currentVolume = currentVolume + 1;
         }
-//        if (currentVolume >= 10) {
-//            this.currentVolume = 10;
-//        }
     }
 
     public void reduceVolume() {
         if (currentVolume > 0) {
             currentVolume = currentVolume - 1;
         }
-//        if (currentVolume <= 0) {
-//            this.currentVolume = 0;
-//        }
     }
 
     public void setCurrentVolume(int CurrentVolume) {
@@ -82,18 +76,6 @@ public class Radio {
             return;
         }
         this.currentVolume = CurrentVolume;
-    }
-
-    public void moreIncreaseVolume() {
-        if (currentVolume >= 10) {
-            this.currentVolume = currentVolume;
-        }
-    }
-
-    public void lessReduceVolume() {
-        if (currentVolume <= 0) {
-            this.currentVolume = currentVolume;
-        }
     }
 }
 
