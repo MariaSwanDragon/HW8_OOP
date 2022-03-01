@@ -47,12 +47,15 @@ public class Radio {
     public int getCurrentVolume() {
         return currentVolume;
     }
+
     public void setToMaxVolume() {
         currentVolume = 10;
     }
+
     public void setToMinVolume() {
         currentVolume = 0;
     }
+
     public void increaseVolume() {
         if (currentVolume < 10) {
             currentVolume = currentVolume + 1;
@@ -70,6 +73,7 @@ public class Radio {
 //            this.currentVolume = 0;
 //        }
     }
+
     public void setCurrentVolume(int CurrentVolume) {
         if (CurrentVolume > 10) {
             return;
@@ -79,6 +83,7 @@ public class Radio {
         }
         this.currentVolume = CurrentVolume;
     }
+
     public void moreIncreaseVolume() {
         if (currentVolume >= 10) {
             this.currentVolume = currentVolume;

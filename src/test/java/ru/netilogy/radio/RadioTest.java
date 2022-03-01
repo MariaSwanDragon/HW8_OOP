@@ -277,6 +277,7 @@ class RadioTest {
 
         assertEquals(expected, actual);
     }
+
     @Test
     public void MoreIncreaseVolume() {
         Radio radio = new Radio();
